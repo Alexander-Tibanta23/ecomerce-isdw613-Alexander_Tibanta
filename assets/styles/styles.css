@@ -1,0 +1,14 @@
+/** @format*/
+
+h2 {
+    color: red;
+}
+
+.miclase{
+    background-color: burlywood;
+}
+
+.cell-header{
+    background-color: burlywood;
+    font-weight: bold;
+}
