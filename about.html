@@ -1,6 +1,156 @@
 <!DOCTYPE html>
-<html> 
+<html lang="en">
 <head>
-    <title>A</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de</title>
+    <style>
+        .mititulo{
+            font-weight: bold;
+            font-size: 1.5em;
+            /*color: blue;*/
+            color: rgb(red, green, blue);
+            text-align: center;
+            background-color: antiquewhite;
+            border-color: black;
+            border-style: dashed;
+            /*border: */
+            border-top: 2px #000 dashed;
+            padding-left: 10px;
+            padding-top: 20px;
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+
+            outline-style: solid;
+            outline-color: blue;
+            outline-width: 10px;
+            outline-offset: 2px;
+        }
+
+        .mitexto{
+            font-size: 0.9em;
+            text-align: justify;
+            text-decoration: overline;
+            text-transform: capitalize;
+            letter-spacing: 5px;
+            text-shadow: 1px 1 px #000;
+            background-color: yellowgreen;
+        }
+
+        table, th, td {
+            border: 1px solid;
+            width: 100%;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        th{
+            text-align: center;
+            color: antiquewhite;
+            vertical-align: middle;
+            background-color: black;
+        }
+
+        td{
+            padding: 10px;
+        }
+
+        td:hover{
+            background-color: yellow;
+        }
+
+        tr:nth-child(even){
+            background-color: blanchedalmond;
+        }
+
+        tr:nth-child(odd){
+            background-color: aquamarine;
+        }
+
+        a:hover{
+            color: yellow;
+        }
+
+        a:visited{
+            color: green;
+        }
+
+        a:link{
+            color: brown;
+        }
+
+        /*
+        h1::before{
+            content: url(smiley.gif);
+        }*/
+
+        p::first-letter{
+            font-size: 20px;
+        }
+
+        p::first-line{
+            color: violet;
+        }
+
+        .micombinador>p{
+            background-color: green;
+        }
+
+        a[target="_blank"]{
+            background-color: yellow;
+        }
+
+    </style>
 </head>
+<body>
+    <p id="titulo" class="mititulo"> Acerca de</p>
+    <p class="mitexto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Facilis dolor quo a ipsa magnam quaerat laudantium est doloremque fugiat mollitia.
+        Illum architecto, aut magnam reiciendis sunt numquam explicabo laborum ratione!
+    </p>
+
+    <div style="width: 70%;"> 
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+            </tr>
+            <tr>
+                <td>Alexander</td>
+                <td>Tibanta</td>
+                <td>alex.tib@epn.edu.ec</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Miranda</td>
+                <td>juan.mir@epn.edu.ec</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>Bouffing</td>
+                <td>pe.bounffing@epn.edu.ec</td>
+            </tr>
+            <tr>
+                <td>El</td>
+                <td>Alesso</td>
+                <td>el.alesso@epn.edu.ec</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="micombinador">
+        <p>Texto dentro de combinador</p>
+        <h1>Cabecera</h1>
+    </div>
+
+    <a href="wikipedia.com">Mis otros productos</a>
+
+    <br/>
+</body>
 </html>

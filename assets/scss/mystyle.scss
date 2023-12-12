@@ -1,0 +1,116 @@
+// mystyle.scss
+
+body {
+    font-family: Arial, sans-serif;
+  
+    h1 {
+      color: blue;
+      font-family: sans-serif;
+      font-style: italic;
+      font-weight: lighter;
+    }
+  
+    #productoDetalleTitle {
+      border: 1px solid black;
+    }
+  
+    #imgProduct {
+      width: 300px;
+    }
+}
+  
+.mititulo {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(red, green, blue);
+    text-align: center;
+    background-color: antiquewhite;
+    border-color: black;
+    border-top: 2px #000 dashed;
+    padding-left: 10px;
+    padding-top: 20px;
+    margin: 20px;
+    outline: 10px solid blue;
+  }
+  
+  .mitexto {
+    font-size: 0.9em;
+    text-align: justify;
+    text-decoration: overline;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px #000;
+    background-color: yellowgreen;
+  }
+  
+  // Estilos para el bloque de precio y línea horizontal
+  hr {
+    margin: 10px 0;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  // Estilos para la tabla de la ficha técnica
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+  
+    th {
+      text-align: center;
+      color: antiquewhite;
+      vertical-align: middle;
+      background-color: black;
+    }
+  
+    td:hover {
+      background-color: yellow;
+    }
+  
+    tr:nth-child(even) {
+      background-color: blanchedalmond;
+    }
+  
+    tr:nth-child(odd) {
+      background-color: aquamarine;
+    }
+  }
+  
+  a:hover {
+    color: yellow;
+  }
+  
+  a:visited {
+    color: green;
+  }
+  
+  a:link {
+    color: brown;
+  }
+  
+  p::first-letter {
+    font-size: 20px;
+  }
+  
+  p::first-line {
+    color: violet;
+  }
+  
+  .micombinador {
+    > p {
+      background-color: green;
+    }
+  }
+  
+  a[target="_blank"] {
+    background-color: yellow;
+  }
+  
+  // Otros estilos...
+  

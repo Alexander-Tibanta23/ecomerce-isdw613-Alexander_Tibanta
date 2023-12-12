@@ -1,54 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+<head>
         <title>Bienvenido a Mi E-Commerce</title>
-    </head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</head>
 
-    <body>
-        <h1>Mi E-Commerce</h1>
-
-        <ul>
-            <li>Home</li>
-            <li>Productos</li>
-            <li><a href="about.html">Acerca de...</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
-
-        <hr>
-
+  <body>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mi E-Commerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Consolas
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Ps5</a></li>
+                    <li><a class="dropdown-item" href="#">PS1</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Xbox Series</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+    </nav>
+        </hr>
         <h1>Productos en Oferta</h1>
+       
+          
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Productos</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Detalles de producto</li>
+            </ol>
+          </nav>
 
-        <table>
-            <tr>
-                <td>
-                    <a href="product.html"><img src="assets/images/ps1.jpg" width="200"/></a>
-                    <p>PS1</p>
-                </td>
-                <td>
-                    <a href="product.html"><img src="assets/images/ps5.jpg" width="200" alt="PS5"/></a>
-                    <p>PS5</p>
-                </td>
-                <td>
-                    <a href="product.html"><img src="assets/images/series x.jpg" width="200" alt="Xbox Series X"/></a>
-                    <p>Xbox Series X</p>
-                </td>
-            </tr>
-        </table>
+        <div class="content">
+            <div class="row">
+                 <div class="col col-md-3 col-xxl-2">
+                   <div class="card" style= "width: 18rem;">
+                    <img src="assets/images/ps5.jpg" class="card-img-top" alt="Ps5">
+                    <div class="card-body">
+                      <h5 class="card-title"> Ps5</h5>
+                      <p class="card-text">Aqui se puede jugar el bumberman.</p>
+                      <div class="collapse" id="ps5info">
+                        <div class="card card-body">
+                          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                        <a href="#ps5info" data-bs-toggle="collapse" class="btn btn-primary">Presiona aqui </a>
+                      </div>
+                      <a href="#" class="btn btn-success">Presiona aqui </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col-md-3 col-xxl-2">
+                  <div class="card" style="width: 18rem;">
+                    <img src="assets/images/ps1.jpg" class="card-img-top" alt="Ps5">
+                    <div class="card-body">
+                      <h5 class="card-title"> Ps1</h5>
+                      <p class="card-text">Aqui se puede jugar el bumberman.</p>
+                      <a href="#" class="btn btn-warning">Presiona aqui </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col-md-3 col-xxl-2">
+                  <div class="card" style="width: 18rem;">
+                    <img src="assets/images/series x.jpg" class="card-img-top" alt="Ps5">
+                    <div class="card-body">
+                      <h5 class="card-title"> XBOX</h5>
+                      <p class="card-text">Aqui se puede jugar el bumberman.</p>
+                      <a href="#" class="btn btn-outline-danger">Presiona aqui </a>
+                    </div>                    
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    <br>
+
+    <table class="table table-striped">
+      <thead>
+        <tr class="table-primary">
+          <th>#</th>
+          <th>Primer Nombre</th>
+          <th>Segundo Nombre</th>
+          <th>Edad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Joel</td>
+          <td>Joel</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Joel</td>
+          <td>Joel</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Joel</td>
+          <td>Joel</td>
+          <td>22</td>
+        </tr>
+      </tbody>
+    </table>
+        
 
 
 
 
-        <!-- 
-        <p> Mi primer parrafo
-            Mi segundo parrafo</p>
 
-        <hr>        
-        <pre>
-            Mi primer parrafo
-            Mi segundo parrafo
-
-            Mi tercer parrafo
-        </pre>
-        -->
-    </body>
+  </body>
 </html>
