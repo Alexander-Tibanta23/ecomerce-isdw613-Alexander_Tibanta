@@ -1,64 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="es"data-bs-theme="dark">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <title>PS1</title>
-    <link rel="stylesheet" href="assets/styles/styles.css" /> 
-    
-    <!--Selector por clave-->
-    <style>
-        h1 {
-            color: blue;
-            font-family: sans-serif;
-            font-style: italic;
-            font-weight: lighter;
-        }
-
-        #productoDetalleTitle {
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/scss/mystyle.scss">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
 </head>
 
 <body>
     <h1>PS1</h1>
-    <img id = "imgProduct" src="assets/images/ps1.jpg" width="300"/>
-    <h2 id = "productoDetalleTitle">Detalles</h2>
-    <p style="font-size: 12px;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor 
-        sit amet consectetur adipiscing elit duis tristique. In hac habitasse platea 
-        dictumst vestibulum rhoncus est. Blandit turpis cursus in hac habitasse platea 
-        dictumst quisque sagittis. Massa tempor nec feugiat nisl pretium 
-        fusce id. Vel eros donec ac odio tempor orci dapibus. Eget felis eget nunc 
-        lobortis. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Id volutpat 
-        lacus laoreet non curabitur gravida arcu ac. Ullamcorper a lacus vestibulum sed 
-        arcu non odio euismod lacinia. Tristique nulla aliquet enim tortor at auctor urna 
-        nunc id. Amet volutpat consequat mauris nunc congue nisi vitae. Sed id semper risus 
-        in. Turpis nunc eget lorem dolor sed viverra. Ultrices gravida dictum fusce ut 
-        placerat orci nulla pellentesque. Ac turpis egestas integer eget aliquet nibh 
-        praesent tristique. Id porta nibh venenatis cras sed felis eget velit aliquet.
+    <img id = "imgProduct" src="assets/images/ps1.jpg" class="img-thumbnail" width="300"/>
+    <div class="container mt-4">
+        <h2 id = "productoDetalleTitle" class="text-center">Detalles</h2>
+        <p  class="lead" style="font-size: 12px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor 
+            sit amet consectetur adipiscing elit duis tristique. In hac habitasse platea 
+            dictumst vestibulum rhoncus est. Blandit turpis cursus in hac habitasse platea 
+            dictumst quisque sagittis. Massa tempor nec feugiat nisl pretium 
+            fusce id. Vel eros donec ac odio tempor orci dapibus. Eget felis eget nunc 
+            lobortis. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Id volutpat 
+            lacus laoreet non curabitur gravida arcu ac. Ullamcorper a lacus vestibulum sed 
+            arcu non odio euismod lacinia. Tristique nulla aliquet enim tortor at auctor urna 
+            nunc id. Amet volutpat consequat mauris nunc congue nisi vitae. Sed id semper risus 
+            in. Turpis nunc eget lorem dolor sed viverra. Ultrices gravida dictum fusce ut 
+            placerat orci nulla pellentesque. Ac turpis egestas integer eget aliquet nibh 
+            praesent tristique. Id porta nibh venenatis cras sed felis eget velit aliquet.
 
-        Facilisis sed odio morbi quis commodo odio aenean sed. Sagittis eu volutpat odio 
-        facilisis mauris. In metus vulputate eu scelerisque felis imperdiet proin. Sit amet 
-        consectetur adipiscing elit pellentesque habitant morbi. Risus feugiat in ante metus 
-        dictum at tempor. Porttitor massa id neque aliquam vestibulum morbi blandit cursus 
-        risus. Mauris augue neque gravida in fermentum et sollicitudin. Malesuada fames ac 
-        turpis egestas integer eget aliquet. Auctor neque vitae tempus quam pellentesque nec
-        nam aliquam sem. Sapien pellentesque habitant morbi tristique senectus et netus et. 
-        Eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Proin fermentum leo 
-        vel orci porta non. Eget arcu dictum varius duis at consectetur lorem donec massa. 
-        Porta lorem mollis aliquam ut porttitor leo a diam. Dolor sit amet consectetur 
-        adipiscing elit ut aliquam purus. At urna condimentum mattis pellentesque id nibh.
-        Convallis convallis tellus id interdum velit laoreet.
-    </p>
+            Facilisis sed odio morbi quis commodo odio aenean sed. Sagittis eu volutpat odio 
+            facilisis mauris. In metus vulputate eu scelerisque felis imperdiet proin. Sit amet 
+            consectetur adipiscing elit pellentesque habitant morbi. Risus feugiat in ante metus 
+            dictum at tempor. Porttitor massa id neque aliquam vestibulum morbi blandit cursus 
+            risus. Mauris augue neque gravida in fermentum et sollicitudin. Malesuada fames ac 
+            turpis egestas integer eget aliquet. Auctor neque vitae tempus quam pellentesque nec
+            nam aliquam sem. Sapien pellentesque habitant morbi tristique senectus et netus et. 
+            Eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Proin fermentum leo 
+            vel orci porta non. Eget arcu dictum varius duis at consectetur lorem donec massa. 
+            Porta lorem mollis aliquam ut porttitor leo a diam. Dolor sit amet consectetur 
+            adipiscing elit ut aliquam purus. At urna condimentum mattis pellentesque id nibh.
+            Convallis convallis tellus id interdum velit laoreet.
+        </p>
 
-    <hr/>
-    <p>
-        Precio: $400
-    </p>
+        <hr/>
+        <p class="lead">
+            Precio: $400
+        </p>
+    </div>
     <hr/>
     <h2>Ficha T&eacute;cnica</h2>
-    <table>
+    <table class="table table-success table-striped">
         <tr>
             <td class="miclase">Peso:</td>
             <td>2 libras</td>
