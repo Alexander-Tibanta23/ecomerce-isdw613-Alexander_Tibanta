@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #primerElemento{
+            position: relative;
+            left: 30px;
+            top: 70px;
+            /*
+            
+            */
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            color: white;
+            z-index: 1;
+        }
+        #segundoElemento{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: white;
+        }
+
+        #container{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background-color: orange;
+            color: white;
+            text-align: center;
+        }
+
+        #child{
+            /*
+            relative ---- al componente que lo contiene
+            absolute ---- a toda la pagina
+            pero si el conteiner tiene una position relative entonces el hijo
+            siempre se va a posicionar al contenedor
+            */
+            position: absolute;
+            left: 100px;
+            top: 5px;
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="primerElemento">Primer Elemento</div>
+    <div id="segundoElemento">Segundo Elemento</div>
+
+    <div id="container">
+        <div id="child">
+            Componente Hijo
+        </div>
+    </div>
+</body>
+</html>
