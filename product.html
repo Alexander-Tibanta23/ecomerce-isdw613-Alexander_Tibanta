@@ -78,5 +78,23 @@
             <td>Blanco</td>
         </tr>
     </table>
+
+    <script>
+        function traverseDOM(nodo){
+          var childNodes = nodo.childNodes;
+          childNodes.forEach(element => {
+              console.log("===================");
+              console.log("Nodo: " + element.nodeName + ", Tipo: " + element.nodeType + "valor: " + element.nodeValue);
+              console.log("Nodo Padre: " + element.parentNode);
+
+              if(element.hasChildNodes) {
+                traverseDOM(element);
+              }
+          });
+        }
+
+        traverseDOM(document.body);
+      </script>
+
 </body>
 </html>

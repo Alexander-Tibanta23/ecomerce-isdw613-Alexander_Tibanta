@@ -18,7 +18,7 @@
     </nav>
 </head>
 
-<body>
+<body onload="pageInitialize();">
     <h1>Cont&aacute;ctenos</h1>
 
     <form>
@@ -91,6 +91,79 @@
         <label for="customRange3" class="form-label">Rango 0 - 10</label>
         <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
     </form>
+
+    <form method="GET" action="/processForm.html">
+      <label for="name">Nombre</label>
+      <input id="name" placeholder="Ingrese el Nombre " name="nombre" type="text" onchange="changeInput();"/>
+      <br />
+      <label for="email">eMail</label>
+      <input id="email" type="email" placeholder="Ingrese el correo electronico" name="correo" onkeydown="OnkeyDownEvent();"/>
+      <label for="comment">Comentario</label>
+      <textarea id="comment"  placeholder="Ingrese el comentario " name="comentario" cols="30" rows="10"></textarea>
+      <br />
+      <label>Sistemas Operativos</label>
+      <input type="checkbox" id="macos" name="os" value="Macos">
+      <label for="macos">MAcOS</label>
+      <input type="checkbox" id="windows" name="os" value="Windows">
+      <label for="windows">Windows</label>
+      <input type="checkbox" id="linux" name="os" value="Linux">
+      <label for="linux">Linux</label>
+      <br />
+      <label for="">Metodo Pago</label>
+      <input type="radio" id="creditcard" name="paymentMethod" value="creditcard">
+      <label for="creditcard">Tarjeta de Cr&eacute;dito</label>
+      <input type="radio" id="paypql" name="paymentMethod" value="paypql">
+      <label for="paypql">PayPAl</label>
+      <input type="radio" id="bitcoin" name="paymentMethod" value="bitcoin">
+      <label for="bitcoin">Bitcoin</label>
+      <br />
+      <label for="deliveryAddress">Direccion de Entrega</label>
+      <select name="" id="deliveryAddress">
+        <option value="">Casa</option>
+        <option value="">Oficina</option>
+        <option>Otro</option>
+      </select>
+      <br>
+      <br>
+      <label for="clave">Clave</label>
+      <input type="password" name="" id="clave" placeholder="Ingrese la Clave">
+      <br>
+      <label for="invoice">Factura</label>
+      <input type="file" id="invoice"/>
+      <br>
+
+      <input type="submit" name="" id="" value="Enviar">
+    </form>
+
+    <button onclick="agregarParrafo()">Agregar Parrafo</button>
+    <button onclick="this.innerHTML= Date()">Click ME</button>
+    <br />
+    <img onmouseover="changeStyle(this, '300px')" onmouseout="changeStyle(this, '200px')" 
+      src="assets/images/ps1.jpg" width="200px" />
+    <script>
+      function changeStyle(element, newsize) {
+        element.style.width = newsize;
+      }
+
+      function agregarParrafo(){
+        var parrafo = document.createElement("p");
+        var texto = document.createTextNode("Este parrafo fue creao dinamicamente");
+        parrafo.appendChild(texto);
+        document.body.appendChild(parrafo);
+      }
+
+      function pageInitialize() {
+        console.log('pageInitialize...');
+      }
+
+      function changeInput() {
+        console.log('changeInput...');
+      }
+
+      function OnkeyDownEvent() {
+        console.log('OnkeyDownEvent...');
+      }
+    </script>
 </body>
 
 </html>
